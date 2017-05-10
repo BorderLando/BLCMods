@@ -1,0 +1,31 @@
+//KnuckleFinger v1.0 by BorderLando, thanks to AllFremington MOD by Kazy.
+//
+
+//Allows Knuckle Dragger to drop also the Godfinger with the Fremington's Edge sight.
+//
+//This MOD is intended especially for the beginning of Normal Mode, where finding a great
+//sniper rifle is quite difficult. If you load the Shadowevil Patch 2.1, finding a good sniper
+//rifle at the beginning becomes easier, but Godfinger's ability to increase the damage as long
+//as the bullet travels makes it usable even after arriving at Sanctuary. WARNING 1: you need
+//the DLC Ultimate Vault Hunter Upgrade Pack Two installed! WARNING 2: if you do not load this
+//MOD when play in Normal Mode or in True Hunter Vault Mode, all found Godfinger will disappear
+//from the backpack!
+
+//KnuckleFinger v1.0 by BorderLando, grazie alla MOD AllFremington di Kazy.
+//
+
+//Consente a Knuckle Dragger di rilasciare anche il Godfinger con lo zoom del Fremington's Edge.
+//
+//Questa MOD è pensata soprattutto per l'inizio della modalità Normale, dove reperire un ottimo
+//fucile da cecchino è alquanto difficile. Se si carica la Patch 2.1 di Shadowevil, trovare un
+//buon fucile da cecchino all'inizio diventa più facile, ma la caratteristica del Godfinger di
+//aumentare il danno quanto più a lungo viaggia il proiettile lo rende utilizzabile anche dopo
+//essere arrivati a Sanctuary. ATTENZIONE 1: occorre avere il DLC Ultimate Vault Hunter Upgrade
+//Pack Two installato! ATTENZIONE 2: se non si carica la MOD quando si gioca in modalità Normale
+//e Vero Cacciatore, tutti i Godfinger trovati spariranno dall'inventario!
+
+set GD_Lobelia_Weapons.sniper.Sniper_Jakobs_6_Godfinger:WeaponPartListCollectionDefinition_275 SightPartData (bEnabled=True,WeightedParts=((Part=WeaponPartDefinition'GD_Weap_SniperRifles.Sight.Sniper_Sight_Hyperion_FremingtonsEdge',Manufacturers=,MinGameStageIndex=0,MaxGameStageIndex=1,DefaultWeightIndex=1)))
+
+set GD_Itempools.Runnables.Pool_KnuckleDragger BalancedItems ((ItmPoolDefinition=None,InvBalanceDefinition=WeaponBalanceDefinition'GD_Weap_Pistol.A_Weapons_Legendary.Pistol_Dahl_5_Hornet',Probability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),bDropOnDeath=True),(ItmPoolDefinition=None,InvBalanceDefinition=WeaponBalanceDefinition'GD_Lobelia_Weapons.sniper.Sniper_Jakobs_6_Godfinger',Probability=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),bDropOnDeath=True))
+
+say "Knuckle Dragger rilascia pure il Godfinger con lo zoom del Fremington's Edge. Ma se non si carica la MOD i Godfinger spariranno."
